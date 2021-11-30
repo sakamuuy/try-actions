@@ -1,0 +1,7 @@
+name: My action 
+on: pull_request
+jobs:
+  greeting: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello GitHub Actions! ${{ github.actor }}"
